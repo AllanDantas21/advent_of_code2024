@@ -7,7 +7,7 @@ fn main() -> io::Result<()> {
     let mut list1: LinkedList<i32> = LinkedList::new();
     let mut list2: LinkedList<i32> = LinkedList::new();
 
-    let path = Path::new("text.txt");
+    let path = Path::new("input.txt");
     let file = File::open(&path)?;
     let reader = io::BufReader::new(file);
 
